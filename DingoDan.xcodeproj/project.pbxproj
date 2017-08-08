@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74C37801F38721100B0B316 /* DingoDanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74C377F1F38721100B0B316 /* DingoDanUITests.swift */; };
 		A784FD0F1F38625B0088A87A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784FD0E1F38625B0088A87A /* AppDelegate.swift */; };
 		A784FD111F38625C0088A87A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784FD101F38625C0088A87A /* ViewController.swift */; };
 		A784FD141F38625C0088A87A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A784FD121F38625C0088A87A /* Main.storyboard */; };
 		A784FD161F38625C0088A87A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A784FD151F38625C0088A87A /* Assets.xcassets */; };
 		A784FD191F38625C0088A87A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A784FD171F38625C0088A87A /* LaunchScreen.storyboard */; };
 		A784FD241F38625C0088A87A /* DingoDanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784FD231F38625C0088A87A /* DingoDanTests.swift */; };
+		A784FD2F1F38631E0088A87A /* BantaGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A784FD2E1F38631E0088A87A /* BantaGenerator.swift */; };
+		A7D4EBB81F3976F700AB6557 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D4EBB61F3976B000AB6557 /* SnapshotHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A74C37821F38721100B0B316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A784FD031F38625B0088A87A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A784FD0A1F38625B0088A87A;
+			remoteInfo = DingoDan;
+		};
 		A784FD201F38625C0088A87A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A784FD031F38625B0088A87A /* Project object */;
@@ -26,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A74C377D1F38721000B0B316 /* DingoDanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DingoDanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74C377F1F38721100B0B316 /* DingoDanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DingoDanUITests.swift; sourceTree = "<group>"; };
+		A74C37811F38721100B0B316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A784FD0B1F38625B0088A87A /* DingoDan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingoDan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A784FD0E1F38625B0088A87A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A784FD101F38625C0088A87A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,9 +49,18 @@
 		A784FD1F1F38625C0088A87A /* DingoDanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DingoDanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A784FD231F38625C0088A87A /* DingoDanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DingoDanTests.swift; sourceTree = "<group>"; };
 		A784FD251F38625C0088A87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A784FD2E1F38631E0088A87A /* BantaGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BantaGenerator.swift; sourceTree = "<group>"; };
+		A7D4EBB61F3976B000AB6557 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A74C377A1F38721000B0B316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A784FD081F38625B0088A87A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A74C377E1F38721100B0B316 /* DingoDanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7D4EBB61F3976B000AB6557 /* SnapshotHelper.swift */,
+				A74C377F1F38721100B0B316 /* DingoDanUITests.swift */,
+				A74C37811F38721100B0B316 /* Info.plist */,
+			);
+			path = DingoDanUITests;
+			sourceTree = "<group>";
+		};
 		A784FD021F38625B0088A87A = {
 			isa = PBXGroup;
 			children = (
 				A784FD0D1F38625B0088A87A /* DingoDan */,
 				A784FD221F38625C0088A87A /* DingoDanTests */,
+				A74C377E1F38721100B0B316 /* DingoDanUITests */,
 				A784FD0C1F38625B0088A87A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +103,7 @@
 			children = (
 				A784FD0B1F38625B0088A87A /* DingoDan.app */,
 				A784FD1F1F38625C0088A87A /* DingoDanTests.xctest */,
+				A74C377D1F38721000B0B316 /* DingoDanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +117,7 @@
 				A784FD151F38625C0088A87A /* Assets.xcassets */,
 				A784FD171F38625C0088A87A /* LaunchScreen.storyboard */,
 				A784FD1A1F38625C0088A87A /* Info.plist */,
+				A784FD2E1F38631E0088A87A /* BantaGenerator.swift */,
 			);
 			path = DingoDan;
 			sourceTree = "<group>";
@@ -99,6 +134,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A74C377C1F38721000B0B316 /* DingoDanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A74C37861F38721100B0B316 /* Build configuration list for PBXNativeTarget "DingoDanUITests" */;
+			buildPhases = (
+				A74C37791F38721000B0B316 /* Sources */,
+				A74C377A1F38721000B0B316 /* Frameworks */,
+				A74C377B1F38721000B0B316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A74C37831F38721100B0B316 /* PBXTargetDependency */,
+			);
+			name = DingoDanUITests;
+			productName = DingoDanUITests;
+			productReference = A74C377D1F38721000B0B316 /* DingoDanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A784FD0A1F38625B0088A87A /* DingoDan */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A784FD281F38625C0088A87A /* Build configuration list for PBXNativeTarget "DingoDan" */;
@@ -144,6 +197,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = htmldrum.xyz;
 				TargetAttributes = {
+					A74C377C1F38721000B0B316 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = A784FD0A1F38625B0088A87A;
+					};
 					A784FD0A1F38625B0088A87A = {
 						CreatedOnToolsVersion = 9.0;
 					};
@@ -168,11 +225,19 @@
 			targets = (
 				A784FD0A1F38625B0088A87A /* DingoDan */,
 				A784FD1E1F38625C0088A87A /* DingoDanTests */,
+				A74C377C1F38721000B0B316 /* DingoDanUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A74C377B1F38721000B0B316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A784FD091F38625B0088A87A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,11 +258,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A74C37791F38721000B0B316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74C37801F38721100B0B316 /* DingoDanUITests.swift in Sources */,
+				A7D4EBB81F3976F700AB6557 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A784FD071F38625B0088A87A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A784FD111F38625C0088A87A /* ViewController.swift in Sources */,
+				A784FD2F1F38631E0088A87A /* BantaGenerator.swift in Sources */,
 				A784FD0F1F38625B0088A87A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +288,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A74C37831F38721100B0B316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A784FD0A1F38625B0088A87A /* DingoDan */;
+			targetProxy = A74C37821F38721100B0B316 /* PBXContainerItemProxy */;
+		};
 		A784FD211F38625C0088A87A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A784FD0A1F38625B0088A87A /* DingoDan */;
@@ -240,6 +320,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A74C37841F38721100B0B316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7WT2H494A9;
+				INFOPLIST_FILE = DingoDanUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxwellforest.DingoDanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DingoDan;
+			};
+			name = Debug;
+		};
+		A74C37851F38721100B0B316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7WT2H494A9;
+				INFOPLIST_FILE = DingoDanUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxwellforest.DingoDanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DingoDan;
+			};
+			name = Release;
+		};
 		A784FD261F38625C0088A87A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -272,6 +382,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7WT2H494A9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -288,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,6 +440,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7WT2H494A9;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -339,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -351,12 +463,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FK7WS43HED;
+				DEVELOPMENT_TEAM = 7WT2H494A9;
 				INFOPLIST_FILE = DingoDan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.htmldrum.DingoDan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxwellforest.DingoDan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -365,12 +478,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = FK7WS43HED;
+				DEVELOPMENT_TEAM = 7WT2H494A9;
 				INFOPLIST_FILE = DingoDan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.htmldrum.DingoDan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxwellforest.DingoDan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -380,12 +494,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = FK7WS43HED;
+				DEVELOPMENT_TEAM = 7WT2H494A9;
 				INFOPLIST_FILE = DingoDanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.htmldrum.DingoDanTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxwellforest.DingoDanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DingoDan.app/DingoDan";
 			};
@@ -396,12 +511,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = FK7WS43HED;
+				DEVELOPMENT_TEAM = 7WT2H494A9;
 				INFOPLIST_FILE = DingoDanTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.htmldrum.DingoDanTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxwellforest.DingoDanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DingoDan.app/DingoDan";
 			};
@@ -410,6 +526,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A74C37861F38721100B0B316 /* Build configuration list for PBXNativeTarget "DingoDanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74C37841F38721100B0B316 /* Debug */,
+				A74C37851F38721100B0B316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A784FD061F38625B0088A87A /* Build configuration list for PBXProject "DingoDan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
